@@ -1,8 +1,37 @@
+body {
+    background-color: #f5f5f5;
+}
+
 #logout {
     height: 15px;
     display: block;
 }
 
+.contractId {
+    background: #fff;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 17%), 0 3px 17px 0 rgb(0 0 0 / 13%);
+}
+
+.contractService {
+    background: #fff;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 17%), 0 3px 17px 0 rgb(0 0 0 / 13%);
+    padding: 5px 20px 10px 20px;
+}
+
 #subNavMenu {
     list-style-type: none;
+}
+
+.cus-tabs {
+    border-bottom: 1px solid #0dcaf0;
+}
+
+.cus-tabs .nav-item.show .nav-link, .cus-tabs .nav-link.active {
+    color: #fff;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.mr-2 {
+    margin-right: 20px;
 }
