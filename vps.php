@@ -88,10 +88,10 @@
                 <label for="" class="col-form-label">契約サービス</label>
                 <ul class="nav nav-tabs cus-tabs mt-4">
                   <li class="nav-item">
-                    <a href="/admin" class="nav-link active">共用サーバー</a>
+                    <a href="index.php" class="nav-link">共用サーバー</a>
                   </li>
                   <li class="nav-item">
-                    <a href="vps.php"class="nav-link">VPS/デスクトッププラン</a>
+                    <a href="vps.php"class="nav-link active">VPS/デスクトッププラン</a>
                   </li>
                 </ul>
 
@@ -101,27 +101,24 @@
                     <table class="table table-borderless">
                       <thead>
                         <tr class="row">
-                          <th class="col-sm-2">契約ド</th>
-                          <th class="col-sm-2">Site Setting</th>
-                          <th class="col-sm-2">使用容量</th>
-                          <th class="col-sm-1">サイト</th>
-                          <th class="col-sm-2">アプリケーションプール</th>
-                          <th class="col-sm-2">エイリアス</th>
-                          <th class="col-sm-1">削除</th>
+                          <th class="col-sm-3">Ip</th>
+                          <th class="col-sm-3">プラン</th>
+                          <th class="col-sm-2">設定</th>
+                          <th class="col-sm-2">サーバー</th>
+                          <th class="col-sm-2">解約</th>
                         </tr>
                       </thead>
                       <tbody>
                           <tr class="row">
-                            <td class="col-sm-2"><a href="" class="link-dark" target="_blank">saisai.test</a>
+                            <td class="col-sm-3"><a href="" class="link-dark" target="_blank">127.0.0.10</a>
+                            </td>
+                            <td class="col-sm-3">
+                              <span>4 プラン</span>
                             </td>
                             <td class="col-sm-2">
-
                               <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm" target="_blank">設定</a>
                             </td>
                             <td class="col-sm-2">
-                              <span>0B</span>
-                            </td>
-                            <td class="col-sm-1">
                               <form action="/admin/app_setting/confirm" method = "post">
                                 <input type="hidden" name="app" value="site">
                                 <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
@@ -129,33 +126,19 @@
                               </form>
                             </td>
                             <td class="col-sm-2">
-                              <form action="/admin/app_setting/confirm" method = "post">
-                                <input type="hidden" name="app" value="app">
-                                <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
-                                <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff' onchange="">
-                              </form>
-                            </td>
-
-                            <td class="col-sm-2">
-                              <a href="" class="btn btn-outline-info btn-sm">追加</a>
-                              <a href="" class="btn btn-outline-danger btn-sm">削除</a>
-                            </td>
-
-                            <td class="col-sm-1">
-                              <button type="button" class="btn btn-outline-danger btn-sm" disable>削除</button>
+                              <button type="button" class="btn btn-outline-danger btn-sm">削除</button>
                             </td>
                           </tr>
                           <tr class="row">
-                            <td class="col-sm-2"><a href="" class="link-dark" target="_blank">saiyannaing1.test</a>
+                            <td class="col-sm-3"><a href="" class="link-dark" target="_blank">127.0.0.11</a>
+                            </td>
+                            <td class="col-sm-3">
+                              <span>4 プラン</span>
                             </td>
                             <td class="col-sm-2">
-
-                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-info btn-sm text-light" target="_blank">設定</a>
+                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm" target="_blank">設定</a>
                             </td>
                             <td class="col-sm-2">
-                              <span>0B</span>
-                            </td>
-                            <td class="col-sm-1">
                               <form action="/admin/app_setting/confirm" method = "post">
                                 <input type="hidden" name="app" value="site">
                                 <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
@@ -163,20 +146,7 @@
                               </form>
                             </td>
                             <td class="col-sm-2">
-                              <form action="/admin/app_setting/confirm" method = "post">
-                                <input type="hidden" name="app" value="app">
-                                <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
-                                <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff' onchange="this.form.submit()">
-                              </form>
-                            </td>
-
-                            <td class="col-sm-2">
-                              <a href="" class="btn btn-outline-info btn-sm">追加</a>
-                              <a href="" class="btn btn-outline-danger btn-sm">削除</a>
-                            </td>
-
-                            <td class="col-sm-1">
-                              <button type="button" class="btn btn-outline-danger btn-sm" disable>削除</button>
+                              <button type="button" class="btn btn-outline-danger btn-sm">削除</button>
                             </td>
                           </tr>
                       </tbody>
@@ -220,7 +190,7 @@
             </div>
         </div>
 
-        <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="300"></canvas> -->
+        <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
 
       </main>
     </div>

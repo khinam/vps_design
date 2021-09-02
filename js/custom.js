@@ -1,0 +1,1 @@
+$('#toggle-demo').bootstrapToggle('on')

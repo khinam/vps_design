@@ -7,6 +7,10 @@ body {
     display: block;
 }
 
+#sidebarMenu {
+    height: 100vh;
+}
+
 .contractId {
     background: #fff;
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 17%), 0 3px 17px 0 rgb(0 0 0 / 13%);
@@ -26,10 +30,20 @@ body {
     border-bottom: 1px solid #0dcaf0;
 }
 
-.cus-tabs .nav-item.show .nav-link, .cus-tabs .nav-link.active {
-    color: #fff;
+.cus-tabs .nav-item.show, .cus-tabs .nav-link.active {
+    color: #fff !important;
     background-color: #0dcaf0;
     border-color: #0dcaf0;
+}
+
+.cus-tabs .nav-link:focus, .cus-tabs .nav-link:hover {
+    border-color: #0dcaf0;
+    color: #fff;
+    isolation: isolate;
+}
+
+.cus-tabs .nav-item .nav-link {
+    color: #000;
 }
 
 .mr-2 {
