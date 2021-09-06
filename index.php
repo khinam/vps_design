@@ -9,9 +9,10 @@
         <div class="contractId">
           <div class="d-flex flex-row bd-highlight mb-3">
             <div class="p-2 bd-highlight">
-              <span><i class="fas fa-id-badge"></i></span>
+              <span class="p-r-10"><i class="fas fa-id-badge"></i></span>
               契約ID
             </div>
+            <div class="vl-2 p-2"></div>
             <div class="p-2 bd-highlight">D000123</div>
           </div>
         </div>
@@ -118,8 +119,8 @@
 
                     <div class="conButton d-flex justify-content-center">
                       <button class="domainAdd btn btn-outline-info btn-sm common_modal mr-2"  data-toggle="modal" data-target="#common_modal" gourl="/admin/add_multi_domain">マルチドメイン追加</button>
-                      <a href="/admin/servers/domain_transfer mr-2" class="domainAcq btn btn-outline-info btn-sm mr-2">ドメイン取得/移管</a>
-                      <a href="/admin/servers" class="addServer btn btn-outline-info btn-sm mr-2">サーバー追加</a>
+                      <a href="domain_transfer.php" class="domainAcq btn btn-outline-info btn-sm mr-2">ドメイン取得/移管</a>
+                      <a href="server.php" class="addServer btn btn-outline-info btn-sm mr-2">サーバー追加</a>
                       <a href="/admin/servers?server=dns" class="addServer btn btn-outline-info btn-sm mr-2">DNS情報</a>
                     </div>
                   </div>

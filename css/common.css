@@ -27,6 +27,16 @@ body {
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 17%), 0 3px 17px 0 rgb(0 0 0 / 13%);
 }
 
+.p-r-10 {
+    padding-right: 10px !important;
+}
+
+.vl-2 {
+    border-left: 2px solid #ddd;
+    height: 37px;
+    margin: 3px;
+}
+
 .pageWrapper {
     background: #fff;
     box-shadow: 0 3px 3px 0 rgb(0 0 0 / 17%), 0 3px 17px 0 rgb(0 0 0 / 13%);
@@ -67,4 +77,19 @@ body {
 .vl {
   border-left: 2px solid #ddd;
   height: 260px;
+}
+
+/*domain transfer*/
+.back-btn {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*server*/
+
+.row-border {
+    margin: 0px 70px 25px 70px;
+    border: 2px solid #000000;
+    padding: 50px 0px;
 }

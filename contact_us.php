@@ -10,18 +10,19 @@
         <div class="contractId">
           <div class="d-flex flex-row bd-highlight mb-3">
             <div class="p-2 bd-highlight">
-              <span><i class="fas fa-id-badge"></i></span>
+              <span class="p-r-10"><i class="fas fa-id-badge"></i></span>
               契約ID
             </div>
+            <div class="vl-2 p-2"></div>
             <div class="p-2 bd-highlight">D000123</div>
           </div>
-        </div>  
+        </div> 
         
         <div class="pageWrapper p-4">
                 <h4>Contact Us</h4>
                 <form>
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="" class="form-label">Name:</label>
                                 <input type="text" class="form-control" id="" placeholder="Enter Name">
@@ -35,9 +36,9 @@
                                 <input type="text" class="form-control" id="" placeholder="Enter Phone">
                             </div>
                         </div>
-                        <div class="col-md-1">
+                        <!-- <div class="col-md-1">
                             <div class="vl"></div>
-                        </div>
+                        </div> -->
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="" class="form-label">Message:</label>
