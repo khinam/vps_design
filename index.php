@@ -9,7 +9,7 @@
         <div class="contractId">
           <div class="d-flex flex-row bd-highlight mb-3">
             <div class="p-2 bd-highlight">
-              <span class="p-r-10"><i class="fas fa-id-badge"></i></span>
+              <span class="p-r-10 icon-s"><i class="fas fa-id-badge"></i></span>
               契約ID
             </div>
             <div class="vl-2 p-2"></div>

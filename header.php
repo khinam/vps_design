@@ -7,6 +7,8 @@
   <title>New Design for common server</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/bootstrap4-toggle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Jacques+Francois&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
 
   <script src="js/jquery-3.6.0.js"></script>
