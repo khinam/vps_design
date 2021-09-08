@@ -34,7 +34,7 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div id="shared-server" class="tab-pane active pr-3 pl-3 pb-3"><br>
-                    <table class="table table-borderless">
+                    <table class="table table-borderless mb-5">
                       <thead>
                         <tr class="row">
                           <th class="col-sm-3">Ip</th>
@@ -45,54 +45,54 @@
                         </tr>
                       </thead>
                       <tbody>
-                          <tr class="row">
-                            <td class="col-sm-3"><a href="" class="link-dark" target="_blank">127.0.0.10</a>
+                          <tr class="row mb-3">
+                            <td class="col-sm-3"><a href="" class="link-dark text-decoration-none" target="_blank">127.0.0.10</a>
                             </td>
                             <td class="col-sm-3">
                               <span>4 プラン</span>
                             </td>
                             <td class="col-sm-2">
-                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm" target="_blank">設定</a>
+                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm btn-border-radius" target="_blank">設定</a>
                             </td>
                             <td class="col-sm-2">
                               <form action="/admin/app_setting/confirm" method = "post">
                                 <input type="hidden" name="app" value="site">
                                 <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
-                                <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff'>
+                                <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff'>
                               </form>
                             </td>
                             <td class="col-sm-2">
-                              <button type="button" class="btn btn-outline-danger btn-sm">削除</button>
+                              <button type="button" class="btn btn-outline-danger btn-sm btn-border-radius">削除</button>
                             </td>
                           </tr>
                           <tr class="row">
-                            <td class="col-sm-3"><a href="" class="link-dark" target="_blank">127.0.0.11</a>
+                            <td class="col-sm-3"><a href="" class="link-dark text-decoration-none" target="_blank">127.0.0.11</a>
                             </td>
                             <td class="col-sm-3">
                               <span>4 プラン</span>
                             </td>
                             <td class="col-sm-2">
-                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm" target="_blank">設定</a>
+                              <a href="/admin/share?webid=<?= $domain['id'] ?>" class="btn btn-outline-info btn-sm btn-border-radius" target="_blank">設定</a>
                             </td>
                             <td class="col-sm-2">
                               <form action="/admin/app_setting/confirm" method = "post">
                                 <input type="hidden" name="app" value="site">
                                 <input type="hidden" name="domain" value="<?=$domain['domain'] ?>">
-                                <input type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff'>
+                                <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-offstyle="secondary" data-on="起動" data-off="停止" data-size="sm" name='onoff'>
                               </form>
                             </td>
                             <td class="col-sm-2">
-                              <button type="button" class="btn btn-outline-danger btn-sm">削除</button>
+                              <button type="button" class="btn btn-outline-danger btn-sm btn-border-radius">削除</button>
                             </td>
                           </tr>
                       </tbody>
                     </table>
 
                     <div class="conButton d-flex justify-content-center">
-                      <button class="domainAdd btn btn-outline-info btn-sm common_modal mr-2"  data-toggle="modal" data-target="#common_modal" gourl="/admin/add_multi_domain">マルチドメイン追加</button>
-                      <a href="/admin/servers/domain_transfer mr-2" class="domainAcq btn btn-outline-info btn-sm mr-2">ドメイン取得/移管</a>
-                      <a href="/admin/servers" class="addServer btn btn-outline-info btn-sm mr-2">サーバー追加</a>
-                      <a href="/admin/servers?server=dns" class="addServer btn btn-outline-info btn-sm mr-2">DNS情報</a>
+                      <button class="domainAdd btn btn-outline-info btn-sm btn-border-radius common_modal mr-2"  data-toggle="modal" data-target="#common_modal" gourl="/admin/add_multi_domain">マルチドメイン追加</button>
+                      <a href="/admin/servers/domain_transfer mr-2" class="domainAcq btn btn-outline-info btn-sm btn-border-radius mr-2">ドメイン取得/移管</a>
+                      <a href="/admin/servers" class="addServer btn btn-outline-info btn-sm btn-border-radius mr-2">サーバー追加</a>
+                      <a href="/admin/servers?server=dns" class="addServer btn btn-outline-info btn-sm btn-border-radius mr-2">DNS情報</a>
                     </div>
                   </div>
                   <div id="vps-desktop" class="tab-pane fade"><br>
