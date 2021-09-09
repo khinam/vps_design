@@ -99,11 +99,26 @@ body {
     padding: 3px 10px;
 }
 
-.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 10px; }
-.toggle.ios .toggle-handle { border-radius: 10px; }
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { 
+    border-radius: 7px;
+    width: 45px !important;
+}
+
+.toggle.ios .toggle-handle { 
+    border-radius: 7px;
+    width: 45px !important;
+ }
+
+ .toggle-off {
+    padding-left: 2rem !important;
+ }
+
+ .toggle-on {
+    padding-right: 2rem !important;
+ }
 
 .toggle{
-    min-width: 4.125rem !important;
+    min-width: 5.125rem !important;
     border-radius: 10px;
 }
 
