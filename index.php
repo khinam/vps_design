@@ -95,7 +95,7 @@
                     </table>
 
                     <div class="conButton d-flex justify-content-center mt-7">
-                      <button class="domainAdd btn btn-outline-info btn-sm btn-border-radius common_modal mr-2"  data-toggle="modal" data-target="#common_modal" gourl="/admin/add_multi_domain">マルチドメイン追加</button>
+                      <button type="button" class="btn btn-outline-info btn-sm btn-border-radius mr-2"  data-bs-toggle="modal" data-bs-target="#common_modal">マルチドメイン追加</button>
                       <a href="domain_transfer.php" class="domainAcq btn btn-outline-info btn-sm btn-border-radius mr-2">ドメイン取得/移管</a>
                       <a href="server.php" class="addServer btn btn-outline-info btn-sm btn-border-radius mr-2">サーバー追加</a>
                       <a href="/admin/servers?server=dns" class="addServer btn btn-outline-info btn-sm btn-border-radius mr-2">DNS情報</a>
@@ -130,6 +130,53 @@
                 </div>
               </div>
             </div>
+        </div>
+
+        <div class="modal fade" id="common_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="">Add Multiple Domain</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="add_multidomain.php" method="post" id="add_multiple_domain" class="form-content">
+                  <input type="hidden" name="token" value="<?php echo $token ;?>">
+                  <div class="row mb-3">
+                      <label for="domain" class="col-sm-2 col-form-label">ドメイン名</label>
+                      <div class="col-sm-8">
+                          <input type="text" class="form-control" id="domain" column="domain" name="domain" placeholder="ドメイン名">
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                      <label for="document" class="col-sm-2 col-form-label">ドキュメントルート</label>
+                      <div class="col-sm-1">
+                          root/
+                      </div>
+                      <div class="col-sm-7">
+                          <input type="text" class="form-control" id="web_dir" name="web_dir" placeholder="8～20文字、半角英数字記号">
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                      <label for="ftp_user" class="col-sm-2 col-form-label">FTPユーザー名</label>
+                      <div class="col-sm-8">
+                          <input type="text" class="form-control" id="ftp_user" name="ftp_user" column="username" placeholder="1～255文字、半角英数小文字と_-.@">
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                      <label for="password" class="col-sm-2 col-form-label">パスワード</label>
+                      <div class="col-sm-8">
+                          <input type="password" class="form-control" id="password" name="password" placeholder="8～70文字、半角英数字記号">
+                      </div>
+                  </div>
+              </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="300"></canvas> -->

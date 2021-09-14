@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/common.css">
 
   <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/custom.js"></script>
   <script src="js/fontawesome.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap4-toggle.min.js"></script>
